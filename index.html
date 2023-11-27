@@ -11,9 +11,9 @@
   <p class="text-3xl"><strong class="font-mono font-black text-[#E83F40]">&lt;</strong>Tiago Carpinteiro.<strong class="font-mono text-[#E83F40]">/&gt;</strong></p>
   <nav id="mySidenav" class="sidenav overflow-hidden text-center flex z-20 w-screen h-screen bg-[#E83F40] transition-all flex-col items-center justify-center top-[-100vh] left-0 fixed">
     <a id="closeBtn" href="#" onclick=closeNav() class="text-4xl text-white absolute right-10 top-10">x</a>
-    <a class="text-6xl whitespace-nowrap m-6 text-white">· PROJETS · PROJETS · PROJETS · PROJETS · PROJETS ·</a>
+    <a href="#projets" onclick=closeNav() class="text-6xl whitespace-nowrap m-6 text-white">· PROJETS · PROJETS · PROJETS · PROJETS · PROJETS ·</a>
     <a class="text-6xl whitespace-nowrap m-6 text-white">· GALERIE PHOTO · GALERIE PHOTO · GALERIE PHOTO · GALERIE PHOTO ·</a>
-    <a class="text-6xl whitespace-nowrap m-6 text-white">· CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT</a>
+    <a href="#contact" onclick=closeNav() class="text-6xl whitespace-nowrap m-6 text-white">· CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT</a>
     <div class="flex items-center absolute bottom-[20px] justify-between w-[90%] mt-[200px]">
         <div class="text-left font-normal text-white w-full pl-3">
             <p>Tiago Carpinteiro</p>
@@ -44,17 +44,17 @@
 
 <section class="w-[75%] ml-auto mr-auto mb-[160px] flex items-center">
   <img src="./public/tiago.png" class="tiago relative basis-1/3 w-[350px] h-[350px] object-cover rounded-[15px]"/>
-  <div class="basis-2/3">
-    <h2 class="text-[#E83F40] text-6xl text-center">Hello !!</h2>
+  <div class="basis-2/3 flex flex-col justify-center">
+    <h2 class="text-[#E83F40] text-6xl text-center  ">Hello !!</h2>
     <p class="font-normal text-justify mx-10">Je m'appelle Tiago Carpinteiro, je suis étudiant en métiers du multimédia et de l'internet à l'IUT de Lens. Passionné par le web et le design, c'est tout naturellement que je me tourne vers l'UX/UI pour mon choix de carrière. J'adore apprendre de nouvelles choses et toujours me rendre utiles.
         Créatif et curieux, ma devise est de rendre l'impossible, possible.</p>
-      <a>Télécharger mon CV</a>
+      <a class="text-white p-3 bg-[#E83F40] inline-block text-center rounded-[15px] w-1/3 ml-auto mr-auto mt-6">Télécharger mon CV</a>
   </div>
 </section>
 
-<section class="overflow-hidden mb-[160px]">
+<section id="projets" class="overflow-hidden mb-[160px]">
     <h1 class="uppercase text-6xl whitespace-nowrap text-[#E83F40]">jets · projets · projets · projets · projets · projets</h1>
-    <div class="w-[80%] ml-auto mr-auto justify-center flex grid grid-cols-3 gap-8 place-content-center">
+    <div class="w-[80%] ml-auto mr-auto justify-center flex grid grid-cols-3 gap-8 mt-6 place-content-center">
         <div class="bg-[#6D0000] text-opacity-0">
             <img class="hover:opacity-0  rounded-[15px]" src="public/Missions.svg">
             <p class="hidden">EN HOVER</p>
@@ -94,7 +94,7 @@
     </div>
 </section>
 
-<section class="overflow-hidden text-center">
+<section class="overflow-hidden text-center mb-[160px]">
     <h1 class="text-[#E83F40] text-6xl text-center whitespace-nowrap">PÉTENCES · COMPÉTENCES · COMPÉTENCES · COMPÉTENCES ·</h1>
     <div class="flex justify-center pt-10 w-full">
         <img class="w-[150px] h-[150px] m-3" src="public/figma.png">
@@ -108,12 +108,12 @@
     </div>
 </section>
 
-<footer>
-    <h1>Contact</h1>
-    <p>tiago.carpinteiro07@gmail.com</p>
-    <p>07 85 61 87 79</p>
-    <p>Paris - Lens - Lille</p>
-    <p>LinkedIn</p>
+<footer id="contact" class="bg-[#E83F40] text-center text-white">
+    <h1 class="text-6xl mb-5">Contact</h1>
+    <p class="font-normal">tiago.carpinteiro07@gmail.com</p>
+    <p class="font-normal">07 85 61 87 79</p>
+    <p class="font-normal">Paris - Lens - Lille</p>
+    <p class="font-normal">LinkedIn</p>
 </footer>
 </body>
 <script>
